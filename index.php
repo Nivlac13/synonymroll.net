@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Synonym Roll</title>
-	<link rel="stylesheet"  type="text/css" src="styles.css"/>
+	<link rel="stylesheet"  type="text/css" href="styles.css"/>
 </head>
 <body>
 	<h1>Synonym Roll</h1>
