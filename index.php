@@ -11,7 +11,11 @@
 			if(empty($word)){
 				echo"Synonym Roll";}
 			else{
-				print_r(unserialize(file_get_contents("https://words.bighugelabs.com/api/2/f20ef01bf13e1ab38ce70b8885a03846/$word/php")));}?>
+				$api_results= unserialize(file_get_contents("https://words.bighugelabs.com/api/2/f20ef01bf13e1ab38ce70b8885a03846/$word/php"));
+				$synonyms = array_merge($api_results["noun"]["syn"],$api_results["verb"]["syn"]);
+				print_r($synonyms);
+			}
+		?>
 	</h1>
 	<form>
 		<input type="text" name="word"/>
