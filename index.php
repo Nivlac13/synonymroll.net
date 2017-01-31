@@ -17,7 +17,8 @@
 				if(empty($api_results["verb"])){
 					$api_results["verb"]=array("syn" => array(""));}
 				$synonyms = array_merge($api_results["noun"]["syn"],$api_results["verb"]["syn"]);
-				print_r($synonyms);
+				foreach($synonyms as &$synonym){
+					echo $synonym;}	
 			}
 		?>
 	</h1>
