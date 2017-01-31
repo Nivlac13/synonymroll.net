@@ -11,7 +11,7 @@
 			if(empty($word)){
 				echo"Synonym Roll";}
 			else{
-				print_r(array_values(unserialize(file_get_contents("https://words.bighugelabs.com/api/2/f20ef01bf13e1ab38ce70b8885a03846/$word/php"))));}?>
+				print_r(array_values(array_values(unserialize(file_get_contents("https://words.bighugelabs.com/api/2/f20ef01bf13e1ab38ce70b8885a03846/$word/php")))));}?>
 	</h1>
 	<form>
 		<input type="text" name="word"/>
