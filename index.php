@@ -7,14 +7,16 @@
 <body>
 	<h1>
 		<?php 
-			$keyFile = fopen("../private/key.txt","r");
-			$key = fgets($keyFile);
-			fclose($keyFile);	
+			error_reporting(0);
+			$file = fopen("../protected/key.txt","r");
+			$key = fgets($file);
+			fclose($file);
+			$key = trim($key);
 			if(empty($_GET["word"])){
 				echo"Synonym Roll";}
 			else{
 				$word = $_GET["word"];
-				$api_results= unserialize(file_get_contents("https://words.bighugelabs.com/api/2/$key/$word/php"));
+				$api_results= unserialize(file_get_contents("http://words.bighugelabs.com/api/2/$key/$word/php"));
 				if(empty($api_results["noun"])){
 					$api_results["noun"]=array("syn" => array(""));}
 				if(empty($api_results["verb"])){
