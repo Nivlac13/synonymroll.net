@@ -7,7 +7,9 @@
 <body>
 	<h1>
 		<?php 
-			
+			$keyFile = fopen("../private/key.txt","r");
+			$key = fgets($keyFile);
+			fclose($keyFile);	
 			if(empty($_GET["word"])){
 				echo"Synonym Roll";}
 			else{
