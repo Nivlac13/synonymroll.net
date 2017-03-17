@@ -29,9 +29,10 @@
 		?>
 	</h1>
 	<form>
-		<input type="text" name="word"/>
+		<input type="text" name="word" class="word-input"/>
+		<br/>
+		<input type="image" src="roll.jpg" alt="Submit Form" class="submit-image"/>
 	</form>
-	<img src="roll.jpg">
 </body>
 </html>
 
