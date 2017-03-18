@@ -1,7 +1,15 @@
 body{
 text-align:center;
 }
-.submit-image{
+h1{
+    width:50%;
+    font-family:Tahoma,Geneva,sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+    font-size:400%;
+}
+input#submit-image{
     width:25%;
     margin-left: auto;
     margin-right: auto;
@@ -11,12 +19,15 @@ text-align:center;
     bottom: 0;
     left: 0;    
 }
-.word-input{
+input#word-input{
     box-shadow: 5px 5px 12px 1px #9E9E9E;
     margin: 5%;
     width: 50%;
     font-size: 2em;
     padding: 1%;
+}
+.spinning{
+    animation: spin 1s linear infinite;
 }
 @-moz-keyframes spin {
 	from{-moz-transform: rotate(0deg);}
@@ -28,6 +39,6 @@ text-align:center;
 }
 @keyframes spin {
 	from {transform: rotate(0deg);}
-	to {transform: rotate(360);}
+	to {transform: rotate(360deg);}
 }
 
