@@ -41,4 +41,11 @@ input#word-input{
 	from {transform: rotate(0deg);}
 	to {transform: rotate(360deg);}
 }
-
+#footer {
+    width:100%;
+    position:fixed;
+    bottom:0px;
+}
+a{
+    color:black;
+}

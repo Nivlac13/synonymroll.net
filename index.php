@@ -40,6 +40,7 @@
 			document.querySelector("form").submit();
 		}
 	</script>
+	<div id="footer">Created by <a href="https://calvinloveland.com">Calvin Loveland</a>. Hire me! <div>
 </body>
 </html>
 
